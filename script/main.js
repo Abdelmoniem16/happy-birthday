@@ -23,6 +23,12 @@ const fetchData = () => {
       });
     });
 };
+document.addEventListener('DOMContentLoaded', function() {
+  var audio = document.getElementById('birthday-audio');
+  document.body.addEventListener('click', function() {
+    audio.play();
+  }, { once: true });
+});
 
 // Animation Timeline
 const animationTimeline = () => {
